@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Контакти" })
+
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <div class="project">
+          <div class="project__title">
+            <h2>My Tech Stack</h2>
+          </div>
+          <div class="project__text">
+            <p>Technologies I’ve been working with recently</p>
+          </div>
+          @@include('html/filters.html',{})
+          <div class="projects__cards project-js"></div>
+          
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+      <script src="js/app.min.js"></script>
+    </div>
+  </body>
+</html>

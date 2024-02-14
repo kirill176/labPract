@@ -1,0 +1,48 @@
+.header {
+  &__content {
+    align-items: center;
+    padding-top: 23px;
+    max-width: 1215px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    align-items: center;
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 67px;
+        &:nth-child(5) {
+          margin-right: 31px;
+        }
+
+        a {
+          line-height: 30px;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          color: #666666;
+          transition: all 0.5s ease 0s;
+        }
+
+        &:hover{
+            a{
+                color: black;
+            }
+        }
+      }
+    }
+  }
+
+  &__icons {
+    ul {
+      margin-right: -67px;
+      li {
+        margin-right: 20px;
+      }
+    }
+  }
+}

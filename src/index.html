@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <div class="main__about">
+          <div class="main__title">
+            <h1>Hi 👋,<br />My name is some name I build things for web</h1>
+          </div>
+          <div class="main__image">
+            <img src="@img/user.jpg" alt="" />
+          </div>
+        </div>
+        <div class="main__stack">
+          <div class="stack-items">
+            <div class="stack-items__title">
+              <h2>My Tech Stack</h2>
+            </div>
+            <div class="stack-items__text">
+              <p>Technologies I’ve been working with recently</p>
+            </div>
+            @@include('html/stackItems.html',{})
+          </div>
+        </div>
+        <div class="projects">
+          <div class="projects__title">
+            <h2>Projects</h2>
+          </div>
+          <div class="projects__text">
+            <p>Things I’ve built so far</p>
+          </div>
+          @@include('html/projects.html',{})
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+      <script src="js/app.min.js"></script>
+    </div>
+  </body>
+</html>

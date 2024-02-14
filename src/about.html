@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Про нас" })
+
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <div class="about-me">
+          <div class="about-me__title">
+            <h2>About Me</h2>
+          </div>
+          <div class="about-me__text">
+            <p>
+              The Generator App is an online tool that helps you to export
+              ready-made templates ready to work as your future website. It
+              helps you to combine slides, panels and other components and
+              export it as a set of static files: HTML/CSS/JS.
+            </p>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="experience__title"><h2>Work Experience</h2></div>
+          <div class="experience__list">
+            <div class="work-list">
+              <div class="work-list__title">
+                <h5>Junior Web Developer</h5>
+                <p>Full Time</p>
+              </div>
+              <div class="work-list__text">
+                <p class="company">SoftServe</p>
+                <p class="dates">Sep 2021 - Dec 2021</p>
+              </div>
+            </div>
+            <div class="work-list">
+              <div class="work-list__title">
+                <h5>Web Development Intern</h5>
+                <p>Internship</p>
+              </div>
+              <div class="work-list__text">
+                <p class="company">EPAM</p>
+                <p class="dates">Sep 2021 - Dec 2021</p>
+              </div>
+            </div>
+            <div class="work-list">
+              <div class="work-list__title">
+                <h5>SEO / SEM Specialist</h5>
+                <p>Internship</p>
+              </div>
+              <div class="work-list__text">
+                <p class="company">GlobalLogic</p>
+                <p class="dates">Sep 2021 - Dec 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="education">
+          <div class="education__title">
+            <h2>Education</h2>
+          </div>
+          <div class="education__content">
+            <div class="work-list">
+              <div class="work-list__title">
+                <h5>
+                  National Aerospace University «Kharkiv Aviation Institute»
+                </h5>
+                <p>Full Time</p>
+              </div>
+              <div class="work-list__text">
+                <p class="dates">Aug 2015 - Dec 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+      <script src="js/app.min.js"></script>
+    </div>
+  </body>
+</html>

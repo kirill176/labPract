@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Контакти" })
+
+  <body>
+    <div class="wrapper" id="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">
+        <form action="" class="form">
+          <div class="form__input">
+            <div class="input name">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="input email">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input tel">
+              <label for="tel">Phone:</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+            <div class="input fax">
+              <label for="fax">Fax:</label>
+              <input type="text" name="fax" id="fax" />
+            </div>
+          </div>
+          <div class="form__textarea">
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </main>
+      @@include('html/footer.html',{})
+      <script src="js/app.min.js"></script>
+    </div>
+  </body>
+</html>
