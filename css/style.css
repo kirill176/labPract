@@ -700,6 +700,16 @@ body {
           transform: rotate(-135deg);
 }
 
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 15px;
+}
+
 .select {
   -webkit-appearance: none;
      -moz-appearance: none;
